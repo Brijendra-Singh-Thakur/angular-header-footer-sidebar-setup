@@ -1,4 +1,4 @@
-# Angular8Demo
+# Angular 8 | Header | Footer | Sidebar | Full Admin Panel Setup
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
 
