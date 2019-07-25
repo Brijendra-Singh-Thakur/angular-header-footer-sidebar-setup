@@ -1,0 +1,138 @@
+:host {
+  // background: #1a2580;
+  background: white;
+  color: black;
+  position: fixed;
+  left: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  min-width: 250px;
+  z-index: 9999;
+  // margin-top: 60px;
+  font-family: poppins, sans-serif;
+  box-shadow: -2px 0px 6px grey;
+  border-right: 1px solid lightgray;
+  margin-top: 51px;
+}
+
+ul {
+  font-size: 18px;
+  line-height: 3;
+  font-weight: 400;
+  padding-top: 10px;
+  list-style: none;
+}
+
+
+.menu-name {
+  margin-left: 10px;
+}
+
+p {
+  margin-left: 30px;
+}
+
+.menu-div {
+  border-bottom: 1px solid lightgrey;
+  padding-top: 15px;
+}
+
+.logo-walpaper {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #38427f;
+  padding-top: 30px;
+
+}
+
+.image-size {
+  width: 249px;
+  height: 120px;
+  background-color: white;
+  margin-top: -1px;
+}
+
+.logo-div {
+  width: 250px;
+  height: 120px;
+  border-bottom: 1px solid lightgrey;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0;
+  border-top: 1px solid lightgrey;
+}
+
+input {
+  display: none;
+  visibility: hidden;
+}
+
+label {
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+  color: #666;
+}
+
+label:hover {
+  color: #000;
+}
+
+label::before {
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  font-size: 15px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+}
+
+#expand {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  // background: url('http://placekitten.com/g/600/300');
+  color: black;
+}
+
+section {
+  padding: 0 20px;
+}
+
+#toggletoggle:checked~#expand {
+  height: 250px;
+}
+
+#toggletoggle:checked~label::before {
+  content: "-";
+}
+
+.menu-image-height {
+  height: 20px;
+}
+
+@media screen and (min-device-width: 565px) and (orientation: landscape) {
+  .landscape-height {
+    height: 62% !important;
+  }
+}
+
+@media screen and (min-device-width: 640px) and (orientation: landscape) {
+  .landscape-height {
+    height: 66% !important;
+  }
+}
+
+

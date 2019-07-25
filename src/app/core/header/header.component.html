@@ -1,0 +1,30 @@
+<header id="header">
+  <div class="topnav" id="myTopnav">
+    <a style="font-size:15px;" class="icon" (click)="toggleMenu()">
+      <i class="fa {{toggleMenuIcon}}" aria-hidden="true"></i>
+    </a>
+    <!-- Logo -->
+    <img [src]=image.header_logo class="logo">
+    
+    <!-- Profile -->
+    <img [src]=image.header_profile width="50px" class="profile-img" (click)="onClickProfile()">
+    <div class="profile-popover" *ngIf="isProfilePopoverVisible">
+      <div>Home</div>
+      <div>Profile</div>
+      <div>Logout</div>
+    </div>
+    <div class="profile-arrow" *ngIf="isProfilePopoverVisible"></div>
+    
+    <!-- Notification -->
+    <i class="fa fa-bell-o bell-icon" aria-hidden="true" (click)="onClickNotification()"></i>
+    <div class="notification-popover" *ngIf="isnotificationPopoverVisible">
+      <div>Notification 1</div>
+      <div>Notification 2</div>
+      <div>Notification 3</div>
+    </div>
+    <div class="notification-arrow" *ngIf="isnotificationPopoverVisible"></div>
+    
+    <!-- Sidebar -->
+    <app-side-nav [@slideInOut]="menuState" (sideMenuClickEvent)="receiveMessage($event)"></app-side-nav>  
+  </div>
+</header>
